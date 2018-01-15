@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/maximodleon/wikipediajs/issues"
   },
-  "homepage": "https://github.com/maximodleon/wikipediajs#readme"
+  "homepage": "https://github.com/maximodleon/wikipediajs#readme",
+  "dependencies": {
+    "axios": "0.17.1"
+  }
 }
