@@ -4,17 +4,13 @@
   "description": "Wikipedia js api wrapper",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.spec.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maximodleon/wikipediajs.git"
   },
-  "keywords": [
-    "api",
-    "js",
-    "wikipedia"
-  ],
+  "keywords": ["api", "js", "wikipedia"],
   "author": "Máximo De León <maximodleon@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -23,5 +19,9 @@
   "homepage": "https://github.com/maximodleon/wikipediajs#readme",
   "dependencies": {
     "axios": "0.17.1"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "4.1.0"
   }
 }

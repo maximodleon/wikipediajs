@@ -9,8 +9,6 @@ function search(searchTerm, lang = "en", options) {
 
   return axios
     .get(url, {
-      httpAgent: new http.Agent({ keepAlive: true }),
-      httpsAgent: new https.Agent({ keepAlive: true }),
       params: {
         ...requestOptions
       }
