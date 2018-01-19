@@ -4,7 +4,7 @@
   "description": "Wikipedia js api wrapper",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.spec.js"
+    "test": "mocha src/wiki.spec.js"
   },
   "repository": {
     "type": "git",

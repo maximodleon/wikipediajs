@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const wikipediajs = require("./index");
+const wikipediajs = require("./wiki");
 
 describe("wikipediajs", () => {
   it("returns a promise", () => {
