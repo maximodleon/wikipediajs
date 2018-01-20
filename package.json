@@ -36,6 +36,6 @@
     "travis-deploy-once": "^4.3.2"
   },
   "czConfig": {
-    "path": "node_module/cz-conventional-changelog"
+    "path": "node_modules/cz-conventional-changelog"
   }
 }

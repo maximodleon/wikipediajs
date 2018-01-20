@@ -1,6 +1,11 @@
 const axios = require('axios')
 
-const queryApi = (url, params) => {
+const API_BASE =
+  ".wikipedia.org/w/api.php?";
+
+
+const queryApi = (lang = "en", params) => {
+  const url = `https://${lang}${API_BASE}`
   return axios.get(url, {
       params: {
         ...params
@@ -15,5 +20,6 @@ const queryApi = (url, params) => {
 };
 
 module.exports = {
-  queryApi
+  queryApi,
+  API_BASE
 };
