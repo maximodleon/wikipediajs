@@ -1,16 +1,23 @@
 {
   "name": "wikipediajs",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Wikipedia js api wrapper",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/wiki.spec.js"
+    "test": "mocha src/wiki.spec.js",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maximodleon/wikipediajs.git"
+    "url": "https://github.com/maximodleon/wikipediajs.git"
   },
-  "keywords": ["api", "js", "wikipedia"],
+  "keywords": [
+    "api",
+    "js",
+    "wikipedia"
+  ],
   "author": "Máximo De León <maximodleon@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -22,6 +29,13 @@
   },
   "devDependencies": {
     "chai": "4.1.2",
-    "mocha": "4.1.0"
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "4.1.0",
+    "semantic-release": "^12.2.2",
+    "travis-deploy-once": "^4.3.2"
+  },
+  "czConfig": {
+    "path": "node_module/cz-conventional-changelog"
   }
 }
