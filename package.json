@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/maximodleon/wikipediajs#readme",
   "dependencies": {
-    "axios": "0.17.1"
+    "axios": "0.17.1",
+    "xml-js": "1.6.2"
   },
   "devDependencies": {
     "chai": "4.1.2",
