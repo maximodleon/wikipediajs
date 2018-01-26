@@ -1,3 +1,9 @@
-export const QUERY_GENERATOR = "search";
-export const RANDOM_GENERATOR = "random";
-export const FEATURED = "featuredfeed";
+const QUERY_GENERATOR = "search";
+const RANDOM_GENERATOR = "random";
+const FEATURED = "featuredfeed";
+
+module.exports = {
+  QUERY_GENERATOR,
+  RANDOM_GENERATOR,
+  FEATURED
+}; 

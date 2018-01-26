@@ -1,4 +1,4 @@
-import { QUERY_GENERATOR, RANDOM_GENERATOR } from "../constants/index";
+const { QUERY_GENERATOR, RANDOM_GENERATOR } = require("../constants/index");
 
 const { queryApi } = require("../utils/urlUtils");
 
@@ -9,7 +9,7 @@ const DEFAULT_PARAMS = {
   action: "query"
 };
 
-function doSearch (searchTerm, lang = "en", options = {}) {
+function doSearch(searchTerm, lang = "en", options = {}) {
   const params = _getParams(options, {
     gsrsearch: searchTerm,
     generator: QUERY_GENERATOR
@@ -20,7 +20,7 @@ function doSearch (searchTerm, lang = "en", options = {}) {
   });
 }
 
-function doRandom (lang = "en", options = {}) {
+function doRandom(lang = "en", options = {}) {
   const params = _getParams(options, {
     generator: RANDOM_GENERATOR
   });
@@ -30,7 +30,7 @@ function doRandom (lang = "en", options = {}) {
   });
 }
 
-function _getParams (queryOptions = {}, generatorOptions = {}) {
+function _getParams(queryOptions = {}, generatorOptions = {}) {
   return Object.assign({}, DEFAULT_PARAMS, queryOptions, generatorOptions);
 }
 module.exports = {
