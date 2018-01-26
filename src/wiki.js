@@ -1,7 +1,7 @@
+import { FEATURED } from "./constants/index";
 const { doSearch, doRandom } = require("./generators/index");
 const { queryApi } = require("./utils/urlUtils");
 const convert = require("xml-js");
-import { FEATURED } from "./constants/index";
 
 function search (searchTerm, lang = "en", options) {
   return doSearch(searchTerm, lang, options);
