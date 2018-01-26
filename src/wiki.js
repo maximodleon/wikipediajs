@@ -1,6 +1,7 @@
 const { doSearch, doRandom } = require("./generators/index");
 const { queryApi } = require("./utils/urlUtils");
 const convert = require("xml-js");
+import { FEATURED } from "./constants/index";
 
 function search (searchTerm, lang = "en", options) {
   return doSearch(searchTerm, lang, options);
@@ -12,7 +13,7 @@ function random (lang = "en", options) {
 
 function featured (options = { feed: "potd" }) {
   const params = Object.assign({}, options, {
-    action: "featuredfeed"
+    action: FEATURED
   });
 
   return queryApi("en", params).then(response => {

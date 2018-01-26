@@ -1,3 +1,5 @@
+import { QUERY_GENERATOR, RANDOM_GENERATOR } from "../constants/index";
+
 const { queryApi } = require("../utils/urlUtils");
 
 const DEFAULT_PARAMS = {
@@ -10,7 +12,7 @@ const DEFAULT_PARAMS = {
 function doSearch (searchTerm, lang = "en", options = {}) {
   const params = _getParams(options, {
     gsrsearch: searchTerm,
-    generator: "search"
+    generator: QUERY_GENERATOR
   });
 
   return queryApi(lang, params).then(response => {
@@ -20,7 +22,7 @@ function doSearch (searchTerm, lang = "en", options = {}) {
 
 function doRandom (lang = "en", options = {}) {
   const params = _getParams(options, {
-    generator: "random"
+    generator: RANDOM_GENERATOR
   });
 
   return queryApi(lang, params).then(response => {
