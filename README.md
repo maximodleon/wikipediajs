@@ -28,22 +28,22 @@ Install via [npm](https://www.npmjs.com/package/wikipediajs)
 
 * import module
 
-```js
- import wiki from 'wikipediajs'
-```
+  ```js
+  import wiki from 'wikipediajs'
+  ```
 
 * Search for article
 
-```js
- wiki.search('savanna hawk')
-   .then((res) => console.log(res))
-   .catch((error) => console.log(error))
-```
+  ```js
+  wiki.search('savanna hawk')
+    .then((res) => console.log(res))
+    .catch((error) => console.log(error))
+  ```
 
 * search for an article in different language
 
-```js
- wiki.search('Veulta a san juan', 'es')
-   .then((res) => console.log(res))
-   .catch((error) => console.log(error))
-```
+  ```js
+  wiki.search('Veulta a san juan', 'es')
+    .then((res) => console.log(res))
+    .catch((error) => console.log(error))
+  ```
