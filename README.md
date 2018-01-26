@@ -2,6 +2,8 @@
 
 [![Travis build](https://img.shields.io/travis/maximodleon/wikipediajs.svg?style=flat-square)]()
 [![npm](https://img.shields.io/npm/v/wikipediajs.svg?style=flat-square)]()
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 
 Promise-based wikipedia API wrapper
 
