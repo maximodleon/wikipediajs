@@ -21,7 +21,7 @@ Install via [npm](https://www.npmjs.com/package/wikipediajs)
 
 # Features
 * Search wikipedia articles in any language
-* Get randmon a random article
+* Get a random article
 * Get feed for Picture of the day, featured article or 'on this day' articles
 
 # Usage
