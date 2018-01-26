@@ -17,7 +17,9 @@ Promise-based wikipedia API wrapper
 
 Install via [npm](https://www.npmjs.com/package/wikipediajs)
 
-`npm install wikipediajs`
+```
+$ npm install wikipediajs
+```
 
 # Features
 * Search wikipedia articles in any language
