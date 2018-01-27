@@ -21,6 +21,11 @@ Install via [npm](https://www.npmjs.com/package/wikipediajs)
 $ npm install wikipediajs
 ```
 
+Via a CDN
+
+```html
+<script src="https://unpkg.com/wikipediajs/dist/index.umd.min.js"/>
+```
 # Features
 * Search wikipedia articles in any language
 * Get a random article
