@@ -2,7 +2,7 @@
   "name": "wikipediajs",
   "version": "0.0.0-development",
   "description": "Wikipedia js api wrapper",
-  "main": "dist/index.js",
+  "main": "dist/wiki.js",
   "unpkg":"dist/index.umd.min.js",
   "scripts": {
     "test": "mocha src/wiki.spec.js",

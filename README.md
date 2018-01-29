@@ -24,7 +24,7 @@ $ npm install wikipediajs
 Via a CDN
 
 ```html
-<script src="https://unpkg.com/wikipediajs/dist/index.umd.min.js"/>
+<script src="https://unpkg.com/wikipediajs/dist/index.umd.min.js" />
 ```
 # Features
 * Search wikipedia articles in any language
