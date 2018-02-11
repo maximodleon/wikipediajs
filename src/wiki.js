@@ -1,17 +1,17 @@
 const { FEATURED } = require("./constants/index");
-const { doSearch, doRandom } = require("./generators/index");
+const { doSearch, doRandom, doAllCatergories } = require("./generators/index");
 const { queryApi } = require("./utils/urlUtils");
 const convert = require("xml-js");
 
-function search(searchTerm, lang = "en", options) {
+function search (searchTerm, lang = "en", options) {
   return doSearch(searchTerm, lang, options);
 }
 
-function random(lang = "en", options) {
+function random (lang = "en", options) {
   return doRandom(lang, options);
 }
 
-function featured(options = { feed: "potd" }) {
+function featured (options = { feed: "potd" }) {
   const params = Object.assign({}, options, {
     action: FEATURED
   });
@@ -26,8 +26,13 @@ function featured(options = { feed: "potd" }) {
   });
 }
 
+function allCategories (lang = "en", options) {
+  return doAllCatergories(lang, options);
+}
+
 module.exports = {
   search,
   random,
-  featured
+  featured,
+  allCategories
 };

@@ -39,6 +39,11 @@ Via a CDN
   import wiki from 'wikipediajs'
   ```
 
+  or require
+
+  ```js
+   const wiki = require('wikipediajs')
+  ```
 * Search for article
 
   ```js
