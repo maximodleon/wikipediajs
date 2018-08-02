@@ -63,7 +63,9 @@
     "travis-deploy-once": "^4.3.2",
     "webpack": "3.10.0"
   },
-  "czConfig": {
+  "config": {
+   "commitizen": {
     "path": "node_modules/cz-conventional-changelog"
+   }
   }
 }
